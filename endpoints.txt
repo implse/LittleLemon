@@ -1,0 +1,8 @@
+
+Booking: http://127.0.0.1:8000/restaurant/booking/tables/
+
+Menu: http://127.0.0.1:8000/restaurant
+
+Djoser: http://127.0.0.1:8000/auth
+
+Token (Insomnia): http://127.0.0.1:8000/restaurant/api-token-auth/

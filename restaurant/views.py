@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from rest_framework.response import Response
 from .serializers import MenuSerializer, BookingSerializer
 from rest_framework.viewsets import ModelViewSet
 from .models import Menu, Booking
@@ -12,7 +13,7 @@ def index(request):
 
 # API: Menu
 class MenuItemView(ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     serializer_class = MenuSerializer
     queryset = Menu.objects.all()
 
@@ -26,5 +27,6 @@ class BookingViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     serializer_class = BookingSerializer
     queryset = Booking.objects.all()
+
 
 

@@ -20,7 +20,7 @@ from rest_framework import routers
 from restaurant.views import BookingViewSet
 
 router = routers.DefaultRouter()
-router.register(r'tables', BookingViewSet)
+router.register(r'tables', BookingViewSet, basename="booking")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
