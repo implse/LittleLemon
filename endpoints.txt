@@ -5,6 +5,6 @@ Menu: http://127.0.0.1:8000/restaurant
 
 Single Menu: http://127.0.0.1:8000/restaurant/id
 
-Djoser: http://127.0.0.1:8000/auth
+Djoser auth: http://127.0.0.1:8000/auth
 
 Token (Insomnia): http://127.0.0.1:8000/restaurant/api-token-auth/

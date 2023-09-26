@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 from django.http import HttpResponse
 from rest_framework.response import Response
 from .serializers import MenuSerializer, BookingSerializer
@@ -7,9 +8,12 @@ from .models import Menu, Booking
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateAPIView, DestroyAPIView
 from rest_framework.permissions import IsAuthenticated
 
-# Create your views here.
-def index(request):
-    return render(request, 'index.html', {})
+# Home
+# def index(request):
+#     return render(request, 'index.html', {})
+
+class Index(TemplateView):
+    template_name = 'index.html'
 
 # API: Menu
 class MenuItemView(ListCreateAPIView):

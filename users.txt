@@ -1,5 +1,8 @@
 root : root@123!
-auth_token: 4b58bf51998d8cba0d38c13c71995773872526ca
+auth_token : 4b58bf51998d8cba0d38c13c71995773872526ca
 
 testuser : lemon@123!
-auth_token: 5e4e005a23dec833b67f5c32ca7479a43d312727
+auth_token : 5e4e005a23dec833b67f5c32ca7479a43d312727
+
+charly : lemon@456!
+auth_token : 5c4a85865bb7343bf2f16d5fc4a9cf4e9c1b0f1b
