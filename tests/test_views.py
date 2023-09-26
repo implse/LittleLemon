@@ -13,7 +13,7 @@ class MenuViewTest(TestCase):
 
     def test_get_all(self):
         client = APIClient()
-        response = client.get('/restaurant/menu/')
+        response = client.get('/restaurant/menu/', format='json')
         menus = Menu.objects.all()
         serializer = MenuSerializer(menus, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
