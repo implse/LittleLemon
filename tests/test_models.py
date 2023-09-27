@@ -1,6 +1,7 @@
 from django.test import TestCase
 from restaurant.models import Menu
 
+# Model Menu Tests
 class MenuTest(TestCase):
 
     def setUp(self):

@@ -1,9 +1,16 @@
+Each of the endpoints uses Token authentication.
+
+1: You must create a superuser in the terminal (python manage.py createsuperuser)
+2: Get a token with username and password at this endpoint: http://127.0.0.1:8000/auth
+
 
 Booking: http://127.0.0.1:8000/restaurant/booking/tables/
 
+Single Booking: http://127.0.0.1:8000/restaurant/booking/tables/<int: id>
+
 Menu: http://127.0.0.1:8000/restaurant
 
-Single Menu: http://127.0.0.1:8000/restaurant/id
+Single Menu: http://127.0.0.1:8000/restaurant/<int:id>
 
 Djoser auth: http://127.0.0.1:8000/auth
 
