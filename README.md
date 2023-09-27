@@ -16,13 +16,13 @@ Each of the following endpoints uses Token authentication.
  `http://127.0.0.1:8000/restaurant/booking/tables/<int:id>`
 
 ## Menu
-  `http://127.0.0.1:8000/restaurant`
+  `http://127.0.0.1:8000/restaurant/`
 
 ## Single Menu
   `http://127.0.0.1:8000/restaurant/<int:id>`
 
 ## Djoser auth
-  `http://127.0.0.1:8000/auth`
+  `http://127.0.0.1:8000/auth/`
 
 ## Token (Insomnia)
  `http://127.0.0.1:8000/restaurant/api-token-auth/`

@@ -14,19 +14,16 @@ class Index(TemplateView):
 
 # API: Menu
 class MenuItemView(ListCreateAPIView):
-    # permission_classes = [IsAuthenticated]
     serializer_class = MenuSerializer
     queryset = Menu.objects.all()
 
 # API: Single Menu
 class SingleMenuItemView(RetrieveUpdateAPIView, DestroyAPIView):
-    # permission_classes = [IsAuthenticated]
     serializer_class = MenuSerializer
     queryset = Menu.objects.all()
 
 # API: Booking
 class BookingViewSet(ModelViewSet):
-    # permission_classes = [IsAuthenticated]
     serializer_class = BookingSerializer
     queryset = Booking.objects.all()
 
