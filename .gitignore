@@ -1,1 +1,4 @@
+.gitignore
 db.sqlite3
+users.txt
+endpoints.txt
